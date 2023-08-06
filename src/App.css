@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --spacing: 0.1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 0.7;
+  margin-bottom: 0.75rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
+  background-color: #e6eaf8;
+}
+.app {
+  
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+main {
+  display: flex;
+  width: 70vw;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  margin-top: 100px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+.container {
+  width: 60vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 50px;
+  margin-bottom: 108px;
+ 
+}
+.person {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-content: center;
+  column-gap: 0.75rem;
+  border-radius: 15px;
+  padding:100px 30px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  background:#fbfcff;
+}
+.person-info{
+  position: absolute;
+  left: 130px;
+  top: 50px
+
+}
+.person img {
+  position: absolute;
+  left: 40px;
+  top: 35px;
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: var(--light-shadow);
+}
+.hoppyConatainer {
+  width: 10vw; 
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.hobby {
+  font-size: 15px;
+  text-align: center;
+  display: block;
+  color: #516fd4;
+  font-weight: 400;
+ 
 }
 
-.App-link {
-  color: #61dafb;
+.hobbyBorder {
+  border: solid 1px #bfc8e5;
+  border-radius: 10px;
+  padding: 1px 5px 4px;
+  margin-top: 10px;
+  margin-right: 5px;
+  
+  cursor: pointer;
+  background-color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hobbyBorder:hover {
+  background-color: #f4f7f8;
+  transition: ease;
+  border: solid 1px #3b62e2;
+}
+
+input:focus, textarea:focus, select:focus{
+  outline: none;
+}
+.searchInput{
+  border: none;
+  margin-left: 10px;
+  
+}
+.nav-search{
+  display: flex;
+  padding: 20px;
+  border: solid 1px #bfc8e5;
+  border-radius: 5px;
+  margin-left: 15px;
+  margin-top: 10px;
+  
+}
+.navBar{
+  width: 60vw;
+  display: flex;
+  align-items: start;
+ 
 }
