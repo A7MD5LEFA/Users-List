@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 
 const User = ({ people }) => {
+
+  
   return (
     <>
       {people.map((person) => {
         const { name, address, hobby, id, image } = person;
         const userHobby = hobby.map((hob) => {
           return (
-            <div className="hobbyBorder"><p className="hobby" key={hob}>
+            <div className="hobbyBorder" key={hob}><p className="hobby" >
               {hob}
             </p></div>
           );

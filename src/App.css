@@ -19,15 +19,13 @@ h4 {
   line-height: 0.7;
   margin-bottom: 0.75rem;
 }
-body{
+body {
   background-color: #e6eaf8;
 }
 .app {
-  
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 main {
   display: flex;
@@ -45,7 +43,6 @@ main {
   grid-template-columns: repeat(3, 1fr);
   margin-top: 50px;
   margin-bottom: 108px;
- 
 }
 .person {
   position: relative;
@@ -54,29 +51,28 @@ main {
   justify-content: center;
   column-gap: 0.75rem;
   border-radius: 15px;
-  padding:100px 30px;
+  padding: 100px 30px;
   margin-left: 15px;
   margin-bottom: 15px;
-  background:#fbfcff;
+  background: #fbfcff;
 }
-.person-info{
+.person-info {
   position: absolute;
   left: 130px;
-  top: 50px
-
+  top: 50px;
 }
 .person img {
   position: absolute;
   left: 40px;
   top: 35px;
-  width: 75px;
-  height: 75px;
+  width: 80px;
+  height: 80px;
   object-fit: cover;
   border-radius: 50%;
   box-shadow: var(--light-shadow);
 }
 .hoppyConatainer {
-  width: 10vw; 
+  width: 10vw;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -87,7 +83,6 @@ main {
   display: block;
   color: #516fd4;
   font-weight: 400;
- 
 }
 
 .hobbyBorder {
@@ -96,7 +91,7 @@ main {
   padding: 1px 5px 4px;
   margin-top: 10px;
   margin-right: 5px;
-  
+
   cursor: pointer;
   background-color: #fff;
 }
@@ -107,26 +102,95 @@ main {
   border: solid 1px #3b62e2;
 }
 
-input:focus, textarea:focus, select:focus{
+input:focus,
+textarea:focus,
+select:focus {
   outline: none;
 }
-.searchInput{
+.searchInput {
+  width: 100%;
   border: none;
   margin-left: 10px;
-  
 }
-.nav-search{
+.nav-search {
+  width: 30rem;
   display: flex;
   padding: 20px;
   border: solid 1px #bfc8e5;
   border-radius: 5px;
   margin-left: 15px;
   margin-top: 10px;
-  
 }
-.navBar{
+.navBar {
   width: 60vw;
   display: flex;
   align-items: start;
- 
+}
+.nav-links {
+  width: 90%;
+  padding: 1rem;
+  padding-right: 0;
+  margin-top: 0.5rem;
+  margin-left: 10rem;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  outline-style: none;
+  list-style: none;
+}
+.title {
+  margin: 5rem 6.7rem 2rem;
+  align-self: flex-start;
+  font-size: 2.5rem;
+}
+a {
+  text-decoration: none;
+  color: #43485b;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 10px;
+}
+a:hover {
+  background-color: #849fff;
+  color: #fff;
+  border-radius: 7px;
+}
+@media screen and (max-width: 1648px) {
+  a {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 1630px) {
+  h3 {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 1583px) {
+  h3 {
+    font-size: 1.07rem;
+  }
+}
+@media screen and (max-width: 1563px) {
+  h3 {
+    font-size: 1.05rem;
+  }
+}
+@media screen and (max-width: 1550px) {
+  h3 {
+    font-size: 1.03rem;
+  }
+}
+@media screen and (max-width: 1537px) {
+  h3 {
+    font-size: 1.01rem;
+  }
+}
+@media screen and (max-height: 783px) {
+  main {
+    margin-top: 10px;
+  }
+  .container {
+    margin-bottom: 5px;
+  }
 }

@@ -9,7 +9,7 @@ export default [
     id: 1,
     name: "Bertie Yates",
     address: "Troy ,MI",
-    hobby: ["clothes", "stem"],
+    hobby: [ "clothes", "stem"],
     image: img1,
   },
   {

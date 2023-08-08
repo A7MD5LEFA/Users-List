@@ -1,13 +1,31 @@
+import { Search } from './Search';
+
 import React from "react";
 
-const Navbar = () => {
+const Navbar = ({searchChange}) => {
+  
   return (
     <nav className="navBar">
-      <div className="nav-search">
-        <i id="searchIcon" class="fa-solid fa-magnifying-glass"></i>
-        <input className="searchInput" type="text" placeholder="Search users" />
+   <Search  searchChange={searchChange}   />
+      <div className="nav-links">
+        <ul>
+          <li>
+            <a href="#">Reputation</a>
+          </li>
+          <li>
+            <a href="#">New users</a>
+          </li>
+          <li>
+            <a href="#">Voters</a>
+          </li>
+          <li>
+            <a href="#">Editors</a>
+          </li>
+          <li>
+            <a href="#">Moderators</a>
+          </li>
+        </ul>
       </div>
-      <div className="nav-links"></div>
     </nav>
   );
 };

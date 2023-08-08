@@ -6,12 +6,23 @@ import Navbar from "./components/Navbar";
 
 function App() {
   const [users, setUsers] = useState(data);
+  const [search, setSearch] = useState("");
+  const searchChange = (e) => {
+    const searchValue = e.target.value.toLowerCase();
+    setSearch(searchValue)
+  };
+
+  const filterUsers = users.filter((user) => {
+    return user.name.toLowerCase().includes(search)
+  })
+
   return (
     <div className="app">
       <main>
-        <Navbar />
+        <h2 className="title">Users</h2>
+        <Navbar searchChange={ searchChange} />
         <div className="container">
-          <User people={users} />
+          <User people={filterUsers} />
         </div>
       </main>
     </div>
